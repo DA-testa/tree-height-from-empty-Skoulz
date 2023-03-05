@@ -1,4 +1,6 @@
 #python3
+#221RDB060
+#Artjoms Sidorkins
 
 import sys
 import threading
