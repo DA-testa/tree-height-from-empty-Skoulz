@@ -34,15 +34,15 @@ def main():
         n = int(input())
         parents = list(map(int, input().split()))
         print(compute_height(n, parents))
-#     else:
-#         print("input error")
+    # else:
+    #     print("input error")
     elif "F" in txt1:
         file1=input()
         if 'a' in file1:
             print("wrong input")
             return
         else: 
-                with open(str("test/"+file1), 'r', encoding='UTF-8') as files:
+                with open("test/"+file1, 'r', encoding='UTF-8') as files:
                     n = int(files.readline())
                     parents = list(map(int, files.readline().split()))
                 print(compute_height(n, parents))
