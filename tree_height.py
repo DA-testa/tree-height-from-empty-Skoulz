@@ -8,8 +8,6 @@ def compute_height(n, parents):
     # Write this function
     tree1 = numpy.zeros(n)
     def tree_height(i):
-        if tree1[i] != 0:
-            return tree1[i]
 
         if parents[i] == -1:
             tree1[i] = 1
@@ -21,7 +19,7 @@ def compute_height(n, parents):
     #max_height = 0
     # Your code here
     for i in range(n):
-         tree_height(i)
+        tree_height(i)
     return int(max(tree1))
 
     #return max_height
