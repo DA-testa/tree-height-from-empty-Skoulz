@@ -13,6 +13,7 @@ def compute_height(n, parents):
 
         if parents[i] == -1:
             tree1[i] = 1
+            
         if tree1[i] != 0:
             return tree1[i]
 
